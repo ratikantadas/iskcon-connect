@@ -191,6 +191,11 @@ form.onsubmit = async function (e) {
 
         if (result.status === "success") {
             alert("🙏 Registration Successful!\n\nHare Krishna.");
+
+// Show the WhatsApp Channel layout right after successful submission!
+
+            document.getElementById('whatsappChannel').style.display = 'block';
+
             localStorage.removeItem(STORAGE_KEY);
             form.reset();
             other.style.display = "none";
